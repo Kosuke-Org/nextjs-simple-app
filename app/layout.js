@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Simple App',
+  title: 'Kosuke Pokemon Website',
 };
 
 export default function RootLayout({ children }) {
