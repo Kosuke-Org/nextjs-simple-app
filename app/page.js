@@ -24,7 +24,7 @@ export default function Home() {
       }}
     >
       <h1 style={{ margin: 0, textAlign: 'center', color: '#1a1a1a' }}>
-        This is the simplest application to import in Kosuke
+        The pokemon website
       </h1>
 
       <div
