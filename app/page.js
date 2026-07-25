@@ -1,12 +1,15 @@
+import { getEnv } from '../lib/env.js';
+
 export default function Home() {
+  const { POKEMON_API_BASE_URL } = getEnv();
+
   const pokemon = {
     name: 'Pikachu',
     number: '025',
     types: ['Electric'],
     height: '0.4 m',
     weight: '6.0 kg',
-    artwork:
-      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png',
+    artwork: `${POKEMON_API_BASE_URL}/sprites/pokemon/other/official-artwork/25.png`,
   };
 
   return (
