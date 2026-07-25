@@ -1,12 +1,12 @@
 export default function Home() {
   const pokemon = {
-    name: 'Pikachu',
-    number: '025',
-    types: ['Electric'],
-    height: '0.4 m',
-    weight: '6.0 kg',
+    name: 'Charizard',
+    number: '006',
+    types: ['Fire', 'Flying'],
+    height: '1.7 m',
+    weight: '90.5 kg',
     artwork:
-      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png',
+      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png',
   };
 
   return (
@@ -40,7 +40,7 @@ export default function Home() {
         <div
           style={{
             borderRadius: '16px',
-            background: 'linear-gradient(160deg, #fff9c4 0%, #ffe082 100%)',
+            background: 'linear-gradient(160deg, #ffe0b2 0%, #ff8a65 100%)',
             display: 'flex',
             justifyContent: 'center',
             padding: '1rem',
@@ -73,8 +73,8 @@ export default function Home() {
             <span
               key={type}
               style={{
-                background: '#ffca28',
-                color: '#5d4200',
+                background: '#ff7043',
+                color: '#5a1a00',
                 borderRadius: '999px',
                 padding: '0.25rem 0.75rem',
                 fontSize: '0.85rem',
