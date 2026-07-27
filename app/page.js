@@ -1,12 +1,12 @@
 export default function Home() {
   const pokemon = {
-    name: 'Arceus',
-    number: '493',
-    types: ['Normal'],
-    height: '3.2 m',
-    weight: '320.0 kg',
+    name: 'Growlithe',
+    number: '58',
+    types: ['Fire'],
+    height: '0.7 m',
+    weight: '19.0 kg',
     artwork:
-      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/493.png',
+      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/58.png',
   };
 
   return (
@@ -40,7 +40,7 @@ export default function Home() {
         <div
           style={{
             borderRadius: '16px',
-            background: 'linear-gradient(160deg, #fff8e1 0%, #d4af37 100%)',
+            background: 'linear-gradient(160deg, #ffe9d6 0%, #f08030 100%)',
             display: 'flex',
             justifyContent: 'center',
             padding: '1rem',
@@ -73,8 +73,8 @@ export default function Home() {
             <span
               key={type}
               style={{
-                background: '#d4af37',
-                color: '#3a2e00',
+                background: '#f08030',
+                color: '#3a1a00',
                 borderRadius: '999px',
                 padding: '0.25rem 0.75rem',
                 fontSize: '0.85rem',
