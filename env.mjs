@@ -2,7 +2,7 @@
 // Imported by next.config.mjs so it runs for `next dev`, `next build`, and `next start`.
 // If a required variable is missing, the process exits and the app never starts.
 
-const REQUIRED_ENV_VARS = ['POKEMON_API_KEY'];
+const REQUIRED_ENV_VARS = ['POKEMON_KEY'];
 
 const missing = REQUIRED_ENV_VARS.filter((name) => {
   const value = process.env[name];
