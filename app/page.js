@@ -99,6 +99,19 @@ export default function Home() {
           <span>Weight: {pokemon.weight}</span>
         </div>
       </div>
+
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/pillar-chat-image.png"
+        alt="Uploaded screenshot"
+        style={{
+          maxWidth: '100%',
+          width: '640px',
+          borderRadius: '12px',
+          boxShadow: '0 12px 30px rgba(0, 0, 0, 0.12)',
+          border: '1px solid #f0f0f0',
+        }}
+      />
     </main>
   );
 }
