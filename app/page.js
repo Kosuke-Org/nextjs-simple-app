@@ -99,6 +99,26 @@ export default function Home() {
           <span>Weight: {pokemon.weight}</span>
         </div>
       </div>
+
+      <section
+        aria-label="Vehicle table"
+        style={{
+          width: '100%',
+          maxWidth: '1200px',
+          borderRadius: '20px',
+          overflow: 'hidden',
+          background: '#fff',
+          boxShadow: '0 12px 30px rgba(0, 0, 0, 0.12)',
+          border: '1px solid #f0f0f0',
+        }}
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/vehicle-table.png"
+          alt="Vehicle management table"
+          style={{ display: 'block', width: '100%', height: 'auto' }}
+        />
+      </section>
     </main>
   );
 }
