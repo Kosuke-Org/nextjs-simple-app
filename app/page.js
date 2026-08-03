@@ -1,12 +1,12 @@
 export default function Home() {
   const pokemon = {
-    name: 'Growlithe',
-    number: '58',
-    types: ['Fire'],
-    height: '0.7 m',
-    weight: '19.0 kg',
+    name: 'Squirtle',
+    number: '7',
+    types: ['Water'],
+    height: '0.5 m',
+    weight: '9.0 kg',
     artwork:
-      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/58.png',
+      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png',
   };
 
   return (
@@ -40,7 +40,7 @@ export default function Home() {
         <div
           style={{
             borderRadius: '16px',
-            background: 'linear-gradient(160deg, #ffe9d6 0%, #f08030 100%)',
+            background: 'linear-gradient(160deg, #d9f2ff 0%, #4592c4 100%)',
             display: 'flex',
             justifyContent: 'center',
             padding: '1rem',
@@ -73,8 +73,8 @@ export default function Home() {
             <span
               key={type}
               style={{
-                background: '#f08030',
-                color: '#3a1a00',
+                background: '#4592c4',
+                color: '#06243a',
                 borderRadius: '999px',
                 padding: '0.25rem 0.75rem',
                 fontSize: '0.85rem',
