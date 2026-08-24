@@ -1,12 +1,12 @@
 export default function Home() {
   const pokemon = {
-    name: 'Growlithe',
-    number: '58',
+    name: 'Arcanine',
+    number: '59',
     types: ['Fire'],
-    height: '0.7 m',
-    weight: '19.0 kg',
+    height: '1.9 m',
+    weight: '155.0 kg',
     artwork:
-      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/58.png',
+      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/59.png',
   };
 
   return (
