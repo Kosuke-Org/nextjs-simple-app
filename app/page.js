@@ -1,12 +1,12 @@
 export default function Home() {
   const pokemon = {
-    name: 'Vaporeon',
-    number: '134',
-    types: ['Water'],
-    height: '1.0 m',
-    weight: '29.0 kg',
+    name: 'Pikachu',
+    number: '025',
+    types: ['Electric'],
+    height: '0.4 m',
+    weight: '6.0 kg',
     artwork:
-      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/134.png',
+      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png',
   };
 
   return (
@@ -40,7 +40,7 @@ export default function Home() {
         <div
           style={{
             borderRadius: '16px',
-            background: 'linear-gradient(160deg, #d6ecff 0%, #6890f0 100%)',
+            background: 'linear-gradient(160deg, #fff6d6 0%, #f8d030 100%)',
             display: 'flex',
             justifyContent: 'center',
             padding: '1rem',
@@ -73,8 +73,8 @@ export default function Home() {
             <span
               key={type}
               style={{
-                background: '#6890f0',
-                color: '#001a3a',
+                background: '#f8d030',
+                color: '#3a2c00',
                 borderRadius: '999px',
                 padding: '0.25rem 0.75rem',
                 fontSize: '0.85rem',
