@@ -24,7 +24,7 @@ export default function Home() {
       }}
     >
       <h1 style={{ margin: 0, textAlign: 'center', color: '#1a1a1a' }}>
-        The pokemon website
+        The pikachu Website
       </h1>
 
       <div
