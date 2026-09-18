@@ -20,7 +20,7 @@ export default function Home() {
         gap: '2rem',
         padding: '2rem',
         fontFamily: 'system-ui, sans-serif',
-        background: 'linear-gradient(160deg, #fdfbfb 0%, #ebedee 100%)',
+        background: 'linear-gradient(160deg, #ffb457 0%, #f97316 100%)',
       }}
     >
       <h1 style={{ margin: 0, textAlign: 'center', color: '#1a1a1a' }}>
