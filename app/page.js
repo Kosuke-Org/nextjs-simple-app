@@ -1,12 +1,17 @@
 export default function Home() {
   const pokemon = {
-    name: 'Pikachu',
-    number: '025',
-    types: ['Electric'],
-    height: '0.4 m',
-    weight: '6.0 kg',
+    name: 'Charizard',
+    number: '006',
+    types: ['Fire', 'Flying'],
+    height: '1.7 m',
+    weight: '90.5 kg',
     artwork:
-      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png',
+      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png',
+  };
+
+  const typeColors = {
+    Fire: { background: '#f08030', color: '#fff4ec' },
+    Flying: { background: '#a890f0', color: '#1b1236' },
   };
 
   return (
@@ -20,7 +25,7 @@ export default function Home() {
         gap: '2rem',
         padding: '2rem',
         fontFamily: 'system-ui, sans-serif',
-        background: 'linear-gradient(160deg, #fdfbfb 0%, #ebedee 100%)',
+        background: 'linear-gradient(160deg, #fff7f0 0%, #f6dfd2 100%)',
       }}
     >
       <h1 style={{ margin: 0, textAlign: 'center', color: '#1a1a1a' }}>
@@ -40,7 +45,7 @@ export default function Home() {
         <div
           style={{
             borderRadius: '16px',
-            background: 'linear-gradient(160deg, #fff6d6 0%, #f8d030 100%)',
+            background: 'linear-gradient(160deg, #ffd9a8 0%, #f08030 100%)',
             display: 'flex',
             justifyContent: 'center',
             padding: '1rem',
@@ -73,8 +78,8 @@ export default function Home() {
             <span
               key={type}
               style={{
-                background: '#f8d030',
-                color: '#3a2c00',
+                background: typeColors[type]?.background ?? '#a8a878',
+                color: typeColors[type]?.color ?? '#1a1a1a',
                 borderRadius: '999px',
                 padding: '0.25rem 0.75rem',
                 fontSize: '0.85rem',
