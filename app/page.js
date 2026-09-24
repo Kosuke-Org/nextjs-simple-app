@@ -1,12 +1,12 @@
 export default function Home() {
   const pokemon = {
-    name: 'Pikachu',
-    number: '025',
+    name: 'Raichu',
+    number: '026',
     types: ['Electric'],
-    height: '0.4 m',
-    weight: '6.0 kg',
+    height: '0.8 m',
+    weight: '30.0 kg',
     artwork:
-      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png',
+      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png',
   };
 
   return (
