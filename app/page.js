@@ -1,12 +1,19 @@
+const TYPE_STYLES = {
+  Fire: { background: '#f08030', color: '#3d1400' },
+  Flying: { background: '#a890f0', color: '#211640' },
+};
+
+const FALLBACK_TYPE_STYLE = { background: '#eceff1', color: '#37474f' };
+
 export default function Home() {
   const pokemon = {
-    name: 'Pikachu',
-    number: '025',
-    types: ['Electric'],
-    height: '0.4 m',
-    weight: '6.0 kg',
+    name: 'Charizard',
+    number: '006',
+    types: ['Fire', 'Flying'],
+    height: '1.7 m',
+    weight: '90.5 kg',
     artwork:
-      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png',
+      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png',
   };
 
   return (
@@ -40,7 +47,7 @@ export default function Home() {
         <div
           style={{
             borderRadius: '16px',
-            background: 'linear-gradient(160deg, #fff6d6 0%, #f8d030 100%)',
+            background: 'linear-gradient(160deg, #fff0dc 0%, #f08030 100%)',
             display: 'flex',
             justifyContent: 'center',
             padding: '1rem',
@@ -69,21 +76,25 @@ export default function Home() {
         </div>
 
         <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.75rem' }}>
-          {pokemon.types.map((type) => (
-            <span
-              key={type}
-              style={{
-                background: '#f8d030',
-                color: '#3a2c00',
-                borderRadius: '999px',
-                padding: '0.25rem 0.75rem',
-                fontSize: '0.85rem',
-                fontWeight: 600,
-              }}
-            >
-              {type}
-            </span>
-          ))}
+          {pokemon.types.map((type) => {
+            const typeStyle = TYPE_STYLES[type] ?? FALLBACK_TYPE_STYLE;
+
+            return (
+              <span
+                key={type}
+                style={{
+                  background: typeStyle.background,
+                  color: typeStyle.color,
+                  borderRadius: '999px',
+                  padding: '0.25rem 0.75rem',
+                  fontSize: '0.85rem',
+                  fontWeight: 600,
+                }}
+              >
+                {type}
+              </span>
+            );
+          })}
         </div>
 
         <div
