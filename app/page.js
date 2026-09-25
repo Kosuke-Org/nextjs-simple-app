@@ -20,10 +20,10 @@ export default function Home() {
         gap: '2rem',
         padding: '2rem',
         fontFamily: 'system-ui, sans-serif',
-        background: 'linear-gradient(160deg, #fdfbfb 0%, #ebedee 100%)',
+        background: 'linear-gradient(160deg, #e53935 0%, #b3161b 100%)',
       }}
     >
-      <h1 style={{ margin: 0, textAlign: 'center', color: '#1a1a1a' }}>
+      <h1 style={{ margin: 0, textAlign: 'center', color: '#fff' }}>
         The pokemon website
       </h1>
 
