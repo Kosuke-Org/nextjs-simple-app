@@ -1,17 +1,16 @@
 export default function Home() {
   const pokemon = {
-    name: 'Charizard',
-    number: '006',
-    types: ['Fire', 'Flying'],
-    height: '1.7 m',
-    weight: '90.5 kg',
+    name: 'Wailord',
+    number: '321',
+    types: ['Water'],
+    height: '14.5 m',
+    weight: '398.0 kg',
     artwork:
-      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png',
+      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/321.png',
   };
 
   const typeColors = {
-    Fire: { background: '#f08030', color: '#fff4ec' },
-    Flying: { background: '#a890f0', color: '#1b1236' },
+    Water: { background: '#6890f0', color: '#f0f5ff' },
   };
 
   return (
@@ -25,7 +24,7 @@ export default function Home() {
         gap: '2rem',
         padding: '2rem',
         fontFamily: 'system-ui, sans-serif',
-        background: 'linear-gradient(160deg, #fff7f0 0%, #f6dfd2 100%)',
+        background: 'linear-gradient(160deg, #f0f7ff 0%, #d2e4f6 100%)',
       }}
     >
       <h1 style={{ margin: 0, textAlign: 'center', color: '#1a1a1a' }}>
@@ -45,7 +44,7 @@ export default function Home() {
         <div
           style={{
             borderRadius: '16px',
-            background: 'linear-gradient(160deg, #ffd9a8 0%, #f08030 100%)',
+            background: 'linear-gradient(160deg, #bcd4ff 0%, #6890f0 100%)',
             display: 'flex',
             justifyContent: 'center',
             padding: '1rem',
