@@ -1,11 +1,12 @@
 export const metadata = {
-  title: 'Kosuke Pokemon Platform',
+  title: 'Gatherly · Find events worth showing up for',
+  description: 'Discover and book concerts, meetups and workshops near you.',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body style={{ margin: 0 }}>{children}</body>
     </html>
   );
 }

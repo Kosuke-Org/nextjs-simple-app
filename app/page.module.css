@@ -1,0 +1,221 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color: #1c1b29;
+  background: #faf9ff;
+}
+
+.page a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #5b3df5;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav a {
+  color: #4a4860;
+  font-weight: 500;
+}
+
+.nav .navButton {
+  color: #5b3df5;
+  border: 1px solid #5b3df5;
+  border-radius: 999px;
+  padding: 0.45rem 1rem;
+}
+
+.hero {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem 4rem;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 1rem;
+  color: #5b3df5;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(2.2rem, 6vw, 3.6rem);
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.subtitle {
+  margin: 1.25rem auto 0;
+  max-width: 560px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #5c5a72;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.primaryButton,
+.secondaryButton,
+.primaryButtonLight {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.8rem 1.6rem;
+  font-weight: 600;
+}
+
+.primaryButton {
+  background: #5b3df5;
+  color: #fff;
+}
+
+.secondaryButton {
+  background: #fff;
+  color: #1c1b29;
+  border: 1px solid #dcd9ea;
+}
+
+.primaryButtonLight {
+  background: #fff;
+  color: #5b3df5;
+}
+
+.section {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+  box-sizing: border-box;
+}
+
+.sectionTitle {
+  margin: 0 0 1.5rem;
+  font-size: 1.6rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.card,
+.step {
+  background: #fff;
+  border: 1px solid #ece9f7;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 20px rgba(40, 30, 90, 0.05);
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date {
+  font-weight: 700;
+  color: #5b3df5;
+}
+
+.category {
+  background: #efebff;
+  color: #4a33c9;
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.cardTitle {
+  margin: 1rem 0 0.4rem;
+  font-size: 1.15rem;
+}
+
+.meta {
+  margin: 0;
+  color: #6b6982;
+  line-height: 1.5;
+}
+
+.price {
+  margin: 1rem 0 0;
+  font-weight: 700;
+}
+
+.stepNumber {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: #5b3df5;
+  color: #fff;
+  font-weight: 700;
+}
+
+.hostBanner {
+  max-width: 1100px;
+  width: calc(100% - 3rem);
+  margin: 2.5rem auto 4rem;
+  padding: 3rem 1.5rem;
+  box-sizing: border-box;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #5b3df5 0%, #8a6cff 100%);
+  color: #fff;
+  text-align: center;
+}
+
+.hostTitle {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.hostText {
+  margin: 0.75rem 0 1.75rem;
+  color: #e9e4ff;
+  font-size: 1.05rem;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 1.5rem;
+  text-align: center;
+  color: #8a889c;
+  font-size: 0.9rem;
+  border-top: 1px solid #ece9f7;
+}
